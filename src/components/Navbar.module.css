@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6rem 0rem;
+  position: relative; 
+  z-index: 99;
+  background-color: #fff;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.links li,
+.signIn {
+  font-weight: 800;
+  margin: 0 1.5rem;
+  padding: 0 0 2rem 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.links li:hover,
+.links .activeLink {
+  cursor: pointer;
+  border-color: #000;
+}
+
+.logo {
+  font-size: 2rem;
+  transform: translateY(-25%);
+  font-weight: 800;
+  transition: color 0.3s;
+}
+
+.logo:hover {
+  cursor: pointer;
+  color: #32C6B1;
+}
+
+.signIn {
+  display: flex;
+  align-items: center;
+  border: none !important;
+  transition: color 0.3s !important;
+}
+
+.signIn:hover {
+  color: #999;
+}
+
+.signIn p {
+  margin-right: 10px;
+}
+
+.logoFill {
+  color: #000 !important;
+  transform: scale(1.1);
+}
+.dropdown{
+  cursor: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+}
+.active{
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+  transform: translateY(1px);
+  transition: ease 0.3s;
+}
+.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: ease 0.3s;
+}
